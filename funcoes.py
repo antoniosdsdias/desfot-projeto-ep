@@ -71,3 +71,4 @@ def posicao_valida(frota,linha,coluna,orientacao,tamanho):
                 if posicao in navio:
                     return False
     return True
+
