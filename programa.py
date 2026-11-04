@@ -1,5 +1,6 @@
 from funcoes import posicao_valida, preenche_frota
 frota = {}
+
 embarcacoes = [
     ["porta-aviões", 1, 4],
     ["navio-tanque", 2, 3],
@@ -9,14 +10,14 @@ embarcacoes = [
 
 for nome, quantidade, tamanho in embarcacoes:
     for i in range(quantidade):
-        print(
-            f"Insira as informações referentes ao navio {nome} "
-            f"que possui tamanho {tamanho}"
-        )
-
         valida = False
 
         while not valida:
+            print(
+                f"Insira as informações referentes ao navio {nome} "
+                f"que possui tamanho {tamanho}"
+            )
+
             linha = int(input("Linha: "))
             coluna = int(input("Coluna: "))
 
